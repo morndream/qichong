@@ -1,0 +1,70 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/comm.css">	
+	<link rel="stylesheet" href="css/reg.css">
+ </head>
+ <body>
+  <!--用户注册页眉header-->
+  <div id="header">
+		<a href="#"><img src="./img/login_logo.png"></a>
+		<p>欢迎注册</p>
+	</div>
+  <!--用户注册内容container-->
+	<div id="container">
+    <!--注册使用类型reg_type -->
+    <div class="reg_type">
+				<a href="reg.html" >手机注册</a>
+				<a href="reg1.html" class="my_style">邮箱注册</a>
+    </div>
+    <!--用户注册信息user_info-->
+		<div class="user_info">
+			<ul>
+				<li>
+					用户名:
+					<span id="uname_msg"></span>
+				</li>
+				<li>
+					<input type="text" id="uname" onblur="uname_notnull()" onfocus="show_namemsg()">
+				</li>
+				<li>
+					密&nbsp;&nbsp;&nbsp;&nbsp;码:
+					<span id="upwd_msg"></span>
+				</li>
+				<li>
+					<input type="password" id="upwd" onblur="upwd_notnull()" onfocus="show_wdmsg()">
+				</li>
+				<li>确认密码:
+				<span id="cpwd_msg"></span>
+				</li>
+				<li>
+					<input type="password" id="cpwd" onblur="cpwd_notnull()" onfocus="show_cpmsg()">
+				</li>
+				<li>
+					电子邮箱:
+					<span id="email_msg"></span>
+				</li>
+				<li>
+					<input type="text" id="email" onblur="email_notnull()" onfocus="show_emailmsg()">
+				</li>
+				<li>验 证 码:</li>
+				<li>
+					<input type="text" id="ck_code">
+					<img src="#" alt="" >
+					<a href="#">看不清?</a>
+				</li>
+				<li>
+				  <button id="button">注册</button>	
+		      <a href="login.html" id="toLogin">我有账号,我要登录</a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+  <footer>
+		<iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+  </footer>
+ </div>
+ <script type="text/javascript" src="./js/reg.js"></script>
+ </body>
+</html>

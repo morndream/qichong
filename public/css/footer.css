@@ -1,0 +1,41 @@
+/*设置页脚footer的框架、背景、颜色*/
+#footer{
+    width:100%;
+    background:rgba(129,148,177,0.2);
+}
+#footer>.foot_qc{
+    width:1200px;
+    display:flex;
+    justify-content:space-between;
+    padding:0 100px;
+    margin:0 auto;
+}
+/*设置footer中每个div的样式*/
+.foot_qc>div{
+    width:160px;
+    height:160px;
+    margin:20px;
+}
+
+/*设置footer 首行样式*/
+.foot_qc div ul li:first-child{
+    font-size:18px;
+    padding:20px 0;
+}
+/*设置footer内容的字体颜色	*/
+.foot_qc ul li a{
+    color:#696969;
+    display:block;
+    height:32px;
+}
+/*设置版权说明的字号*/
+.recode>p{
+    text-align:center;
+    font-size:14px;
+    color:#696969;
+    line-height:100px;
+}
+/*设置鼠标悬停时，字体为红色	*/
+.foot_qc a:hover{
+    color:#f00;
+}

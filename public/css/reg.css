@@ -1,0 +1,154 @@
+   /*设置页面背景颜色*/
+   a{display:inline-block;}
+
+    /*设置头部框架大小和位置*/
+		#header{
+		   width:1200px;
+			 height:140px;
+			 margin:0 auto;
+		}
+    /*设置头部log位置*/
+	  #header>a{
+		   width:307px;
+			 height:140px;
+			 float:left;
+		}
+    /*设置头部“欢迎登录”位置*/
+		#header>p{
+		   width:105px;
+			 height:60px;
+			 float:left;
+			 border-left:2px solid #666;
+			 font-size:24px;
+			 color:#666;
+			 line-height:60px;
+			 margin-top:60px;
+			 padding-left:15px;
+		}
+   /*设置用户注册框架大小、位置、背景颜色*/
+	 #container{
+		  width:430px;
+			height:530px;
+			border:1px solid #aaa;
+			border-radius:2px;
+			box-shadow:0px 0px 10px 5px rgba(255,255,255,0.5) inset,0px 0px 10px 2px rgba(75,75,75,0.2);
+			padding:20px 10px;
+			margin:0  auto 50px;
+			background:#f9ebeb;	
+		}
+   /*添加用户注册的使用类型样式*/
+   .reg_type{
+		 width:430px;
+		 height:50px;
+		 text-align:center;
+	 }
+   /*去除页面中所有a标签的下划线，行内块显示*/
+   .reg_type>a{
+	  /*width:142px;*/
+		height:50px;
+		line-height:50px;
+		border-radius:8px;
+	  font-size:18px;
+		color:#d87a7a;
+		padding:0px 35px;
+		cursor:pointer;
+	 }
+   /*当用户选择注册类型时，获取焦点样式*/
+   .my_style{
+	   background:#d87a7a;
+		 color:#fff !important; 
+	 }
+   /*用户注册信息在框架中显示的位置*/
+	 .user_info{
+	 	  margin-left:70px; 
+	 }
+   /*设置ul大小、位置、字体*/
+	 .user_info>ul{
+	 	  width:430px;
+		  height:460px;
+	 }
+   /*设置ul>li的宽高*/
+  .user_info>ul>li{
+		 width:300px;
+		 line-height:40px;
+	}
+   /*设置输入框的样式*/
+	.user_info input{
+			width:260px;
+			height:20px;
+			border:1px solid #d4d4d4;
+			padding:10px;
+			border-radius:2px;
+	  }
+		.user_info input:focus{
+		    outline:none;
+		}
+  /*设置输入框中输入码的大小*/
+	.user_info input#ck_code{
+			width:122px;
+			line-height:40px;
+
+	}
+   /*设置注册信息中a标签的样式*/
+	.user_info a{
+			height:42px;
+			color:#403f3f;
+			margin-left:80px;
+	}
+   /*a标签鼠标悬停时,字体显示红色	*/
+	.user_info a:hover{
+	  color:#f00;
+	}
+ 
+   /*设置button的样式*/
+	.user_info #button{
+		  display:inline-block;
+		  height:40px;
+			color:#fff;
+			background:#d87a7a;
+			border:none;
+			padding:0px 30px;
+			margin-top:10px;
+			border-radius:8px;	
+	}	
+  /*设置页脚footer的框架、背景、颜色*/
+	#footer{
+		width:100%;
+	  background:rgba(212,212,212,0.6);
+		margin:50px auto 0px;
+	
+	}
+	#footer>.foot_qc{
+    display:flex;
+		flew-wrap:nowrap;
+	  padding:0px 100px;
+	}
+  /*设置footer中每个div的样式*/
+  .foot_qc>div{
+		width:160px;
+		height:160px;
+		margin:20px;	
+	}
+
+  /*设置footer 首行样式*/
+  .foot_qc div ul li:first-child{
+   font-size:18px;
+	 padding:20px 0px; 
+  }
+   /*设置footer内容的字体颜色	*/
+ .foot_qc ul li a{
+		  color:#696969;
+			display:block;
+			height:32px;
+	}
+   /*设置版权说明的字号*/
+	.recode>p{
+		text-align:center;
+		font-size:14px;
+		color:#696969;
+		line-height:100px;
+	}
+   /*设置鼠标悬停时，字体为红色	*/
+  .foot_qc a:hover{
+	  color:#f00;
+	}

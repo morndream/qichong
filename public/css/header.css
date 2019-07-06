@@ -1,0 +1,53 @@
+/*登录条背景颜色*/
+.loginbar{
+    width:100%;
+    background:#f7f7f7;
+    border-bottom:1px solid #dcdcdc;
+}
+/*登录条内容居中显示*/
+.loginbar_content{
+    width:1200px;
+    height:32px;
+    margin:0 auto;
+}
+/*解决浮动高度坍塌问题*/
+.loginbar_content:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+/*调整登录条左边：收藏奇宠网样式*/
+.loginbar_content>a{
+    float:left;
+    margin-top:5px;
+    color:#000;
+}
+/*调整图片和文字的对齐*/
+.loginbar_content a img{
+    margin-bottom:3px;
+}
+/*调整登录条右边位置*/
+.loginbar_content ul{
+    margin-left:545px;
+}
+/*ul登录内容浮动 调整两两之间的距离*/
+.loginbar_content ul li{
+    float:left;
+    margin:6px 10px;
+}
+/*设置右边字体颜色*/
+.loginbar_content ul li:last-child,.loginbar_content>ul>li>a{
+    color:#666;
+}
+.loginbar_content ul li a:hover{
+    color:red;
+}
+/*免费注册 设置为红色字体*/
+.loginbar_content ul li:nth-child(2) a{
+    color:red;
+}
+/*设置登录条中图片和文字的距离*/
+.loginbar_content img{
+    vertical-align:middle;
+    margin-right:5px;
+}
