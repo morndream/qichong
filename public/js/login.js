@@ -61,7 +61,7 @@ function uname_notnull(){
 //				 var obj=JSON.parse(result);
 				   alert(result);
              if(result=="登录成功"){ 
-						 window.location.href = 'http://127.0.0.1:8080/qc_index.html';
+						 window.location.href = './qc_index.html';
 			   }
 			}
 		 }
@@ -116,7 +116,7 @@ function uname_notnull(){
 			   var result=xhr.responseText;
 				 alert(result);
          if(result=="登录成功"){ 
-						 window.location.href = 'http://127.0.0.1:8080/qc_index.html';
+						 window.location.href = './qc_index.html';
 			    }
 		   	} 
 		}

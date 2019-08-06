@@ -127,7 +127,7 @@ var btn=document.getElementById("button");
 			  var result=xhr.responseText;
 	          alert(result);
 			  if(result=="注册成功"){
-			    window.location.href="http://127.0.0.1:8080/qc_login.html";		  
+			    window.location.href="./qc_login.html";		  
 			  }
 			}	
 		}
