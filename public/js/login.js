@@ -50,8 +50,6 @@ function uname_notnull(){
 	   //获取数据
 		 var u_name=uname.value;
 		 var u_pwd=upwd.value;
-		 var uname_msg=document.getElementById("uname_msg");
-		 var upwd_msg=document.getElementById("upwd_msg");
     //创建xhr对象
 		 var xhr=new XMLHttpRequest();
     //绑定监听事件
@@ -63,7 +61,7 @@ function uname_notnull(){
 //				 var obj=JSON.parse(result);
 				   alert(result);
              if(result=="登录成功"){ 
-						 window.location.href = 'http://127.0.0.1:8080/index.html';
+						 window.location.href = 'http://127.0.0.1:8080/qc_index.html';
 			   }
 			}
 		 }
@@ -118,7 +116,7 @@ function uname_notnull(){
 			   var result=xhr.responseText;
 				 alert(result);
          if(result=="登录成功"){ 
-						 window.location.href = 'http://127.0.0.1:8080/index.html';
+						 window.location.href = 'http://127.0.0.1:8080/qc_index.html';
 			    }
 		   	} 
 		}

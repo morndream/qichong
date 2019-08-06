@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="./css/bootstrap.css"/>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/comm.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title></title>
+</head>
+<body>
+<div class="content">
+<!--引入头部header -->
+  <header>
+		<iframe class="my_header" src="header.html" frameborder="0" scrolling="no"></iframe>
+	</header>
+  <!--搜索区域start-->
+  <div class="search">
+    <!--log-->
+    <img src="img/index/logo.png">
+    <!--搜索输入框-->
+    <div class="search_text">
+      <input type="text" placeholder="想找什么？输入关键字试试" id="suos" list="list-ck" autofocus >
+			<datalist id="list-ck">
+			  <option>宠物猫</option>
+				<option>宠物狗</option>
+				<option>奇趣小宠</option>
+        <option>宠物用品</option>
+			</datalist>
+      <select name="pet" id="type" class="pet_search">
+        <option value="1">宠物</option>
+        <option value="2">宠物猫</option>
+        <option value="3">宠物狗</option>
+        <option value="4">奇趣小宠</option>
+        <option value="5">宠物用品</option>
+      </select>
+      <a href="">搜索</a>
+    </div>
+    <!--热门搜索-->
+    <div class="search_hot">
+      <ul>
+        <li><a href="#">金毛</a></li>
+        <li><a href="#">泰迪</a></li>
+        <li><a href="#">拉布拉多</a></li>
+        <li><a href="#">萨摩耶</a></li>
+        <li><a href="#">柯基犬</a></li>
+        <li><a href="#">布偶猫</a></li>
+        <li><a href="#">加菲猫</a></li>
+        <li><a href="#">暹罗猫</a></li>
+      </ul>
+    </div>
+    <!--购物车-->
+    <div class="shopping_car">
+      <a href="#">
+        <img src="./img/index/shop_car.png">
+        <span>我的购物车</span>
+      </a>
+    </div>
+  </div>
+  <!--搜索end-->
+  <!--导航start -->
+  <div class="nav">
+    <div class="nav_content">
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li class="dropdown">
+          <a href="#"  class="dropdown-toggle" data-toggle="dropdown">宠物狗</a>
+          <div class="dog_type dropdown-menu">
+            <div class="small_type">
+              <div><p>小型犬</p></div>
+              <ul>
+                <li><a href="#">泰迪犬</a></li>
+                <li><a href="#">茶杯泰迪</a></li>
+                <li><a href="#">玩具泰迪犬</a></li>
+                <li><a href="#">博美犬</a></li>
+                <li><a href="#">比熊犬</a></li>
+                <li><a href="#">吉娃娃</a></li>
+                <li><a href="#">约克夏</a></li>
+                <li><a href="#">法国斗牛犬</a></li>
+                <li><a href="#">雪纳瑞</a></li>
+                <li><a href="#">巴哥犬</a></li>
+                <li><a href="#">马尔济斯犬</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">小鹿犬</a></li>
+                <li><a href="#">蝴蝶犬</a></li>
+                <li><a href="#">中华冠毛犬</a></li>
+                <li><a href="#">京巴犬</a></li>
+                <li><a href="#">西高地白梗</a></li>
+                <li><a href="#">其他狗狗</a></li>
+              </ul>
+            </div>
+            <div class="middle_type">
+              <div><p>中型犬</p></div>
+              <ul>
+                <li><a href="#">金毛犬</a></li>
+                <li><a href="#">萨摩耶</a></li>
+                <li><a href="#">哈士奇</a></li>
+                <li><a href="#">拉布拉多</a></li>
+                <li><a href="#">德国牧羊犬</a></li>
+                <li><a href="#">秋田犬</a></li>
+                <li><a href="#">柯基犬</a></li>
+                <li><a href="#">英国斗牛犬</a></li>
+                <li><a href="#">边境牧羊犬</a></li>
+                <li><a href="#">日本柴犬</a></li>
+                <li><a href="#">松狮</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">苏格兰牧羊犬</a></li>
+                <li><a href="#">银狐犬</a></li>
+                <li><a href="#">喜乐蒂</a></li>
+                <li><a href="#">可卡犬</a></li>
+                <li><a href="#">沙皮犬</a></li>
+                <li><a href="#">牛头梗</a></li>
+                <li><a href="#">腊肠犬</a></li>
+                <li><a href="#">比格犬</a></li>
+                <li><a href="#">巴吉度</a></li>
+                <li><a href="#">比特犬</a></li>
+                <li><a href="#">其他狗狗</a></li>
+              </ul>
+            </div>
+            <div class="big_type">
+              <div><p>大型犬</p></div>
+              <ul>
+                <li><a href="#">阿拉斯加犬</a></li>
+                <li><a href="#">高加索</a></li>
+                <li><a href="#">古代牧羊犬</a></li>
+                <li><a href="#">大白熊</a></li>
+                <li><a href="#">藏獒</a></li>
+                <li><a href="#">罗威纳</a></li>
+                <li><a href="#">阿富汗猎犬</a></li>
+                <li><a href="#">伯恩山</a></li>
+                <li><a href="#">杜高犬</a></li>
+                <li><a href="#">大丹犬</a></li>
+                <li><a href="#">圣伯纳</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">灵缇犬</a></li>
+                <li><a href="#">杜宾犬</a></li>
+                <li><a href="#">加纳利犬</a></li>
+                <li><a href="#">卡斯罗</a></li>
+                <li><a href="#">其他狗狗</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">宠物猫</a>
+          <div class="cat_type dropdown-menu">
+            <div class="small_type">
+              <div><p>小型猫</p></div>
+              <ul>
+                <li><a href="#">新加坡猫</a></li>
+                <li><a href="#">柯尼斯卷毛猫</a></li>
+                <li><a href="#">东方猫</a></li>
+                <li><a href="#">喜马拉雅猫</a></li>
+                <li><a href="#">黑足猫</a></li>
+
+              </ul>
+							<ul>
+								<li><a href="#">锈斑豹猫</a></li>
+                <li><a href="#">折耳猫</a></li>
+                <li><a href="#">曼岛无尾猫</a></li>
+                <li><a href="#">斯可可猫</a></li>
+                <li><a href="#">其他猫咪</a></li>
+							</ul>
+            </div>
+            <div class="middle_type">
+              <div><p>中型猫</p></div>
+              <ul>
+                <li><a href="#">暹罗猫</a></li>
+                <li><a href="#">波斯猫</a></li>
+                <li><a href="#">巴厘猫</a></li>
+                <li><a href="#">埃及猫</a></li>
+                <li><a href="#">缅甸猫</a></li>
+                <li><a href="#">金吉拉猫</a></li>
+                <li><a href="#">夏特尔猫</a></li>
+                <li><a href="#">索马里猫</a></li>
+                <li><a href="#">挪威森林猫</a></li>
+                <li><a href="#">哈瓦那棕猫</a></li>
+                <li><a href="#">土耳其梵猫</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">东方短毛猫</a></li>
+                <li><a href="#">美国卷耳猫</a></li>
+                <li><a href="#">美国硬毛猫</a></li>
+                <li><a href="#">日本短尾猫</a></li>
+                <li><a href="#">美国短毛猫</a></li>
+                <li><a href="#">异国短毛猫</a></li>
+                <li><a href="#">英国短毛猫</a></li>
+                <li><a href="#">阿比西尼亚猫</a></li>
+                <li><a href="#">柯尼斯卷毛猫</a></li>
+                <li><a href="#">土耳其安哥拉猫</a></li>
+                <li><a href="#">其他猫咪</a></li>
+              </ul>
+            </div>
+            <div class="big_type">
+              <div><p>大型猫</p></div>
+              <ul>
+                <li><a href="#">布偶猫</a></li>
+                <li><a href="#">孟买猫</a></li>
+                <li><a href="#">缅因猫</a></li>
+                <li><a href="#">沙特尔猫</a></li>
+                <li><a href="#">西伯利亚猫</a></li>
+                <li><a href="#">电烫卷猫</a></li>
+                <li><a href="#">山东狮子猫</a></li>
+                <li><a href="#">其他猫咪</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">奇趣小宠</a>
+          <div class="other_type dropdown-menu">
+            <div class="small_type">
+              <div><p>小型宠</p></div>
+              <ul>
+                <li><a href="#">龙猫</a></li>
+                <li><a href="#">仓鼠</a></li>
+                <li><a href="#">鱼</a></li>
+                <li><a href="#">兔子</a></li>
+                <li><a href="#">松鼠</a></li>
+                <li><a href="#">鸟</a></li>
+                <li><a href="#">豚鼠</a></li>
+                <li><a href="#">宠物貂</a></li>
+                <li><a href="#">变色龙</a></li>
+                <li><a href="#">龟</a></li>
+                <li><a href="#">宠物猪</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">蛇</a></li>
+                <li><a href="#">蜥蜴</a></li>
+                <li><a href="#">蝎子</a></li>
+                <li><a href="#">刺猬</a></li>
+                <li><a href="#">蜗牛</a></li>
+                <li><a href="#">其他</a></li>
+              </ul>
+            </div>
+            <div class="middle_type">
+              <div><p>中型宠</p></div>
+              <ul>
+                <li><a href="#">鱼</a></li>
+                <li><a href="#">龟</a></li>
+                <li><a href="#">蛇</a></li>
+                <li><a href="#">狐狸</a></li>
+                <li><a href="#">宠物猪</a></li>
+                <li><a href="#">其他</a></li>
+              </ul>
+            </div>
+            <div class="big_type">
+              <div><p>大型宠</p></div>
+              <ul>
+                <li><a href="#">羊驼</a></li>
+                <li><a href="#">马</a></li>
+                <li><a href="#">鱼</a></li>
+                <li><a href="#">蛇</a></li>
+                <li><a href="#">其他</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">宠物用品</a></li>
+        <li><a href="#">宠物百科</a></li>
+        <li><a href="#">宠物店铺</a></li>
+        <li><a href="#">宠物集市</a></li>
+        <li><a href="#">宠物秀场</a></li>
+        <li><a href="#">知识问答</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--导航end-->
+ <!--banner部分 -->
+  <div class="carousel" id="banner" data-ride="carousel">
+    <!--轮播图片-->
+    <div class="carousel-inner">
+      <div class="carousel-item  active">
+        <img class="w-100" src="./img/index/banner0.png"  >
+      </div>
+      <div class="carousel-item">
+        <img class="w-100" src="./img/index/banner1.jpg"  >
+      </div>
+      <div class="carousel-item">
+        <img class="w-100" src="./img/index/banner2.png"  >
+      </div>
+      <div class="carousel-item">
+        <img class="w-100" src="./img/index/banner3.jpg"  >
+      </div>
+    </div>
+    <!--左右箭头-->
+    <a data-slide="prev" class="carousel-control-prev" href="#banner">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a data-slide="next" class="carousel-control-next" href="#banner">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    <!--轮播指示器-->
+    <ul class="carousel-indicators">
+      <li data-target="#banner" data-slide-to="0" class="active"></li>
+      <li data-target="#banner" data-slide-to="1"></li>
+      <li data-target="#banner" data-slide-to="2"></li>
+      <li data-target="#banner" data-slide-to="3"></li>
+    </ul>
+  </div>
+ <!--中间内容主体区域 -->
+ <div class="my_main0">	
+   <div class="main0_left">
+		<ul>
+			<li><span>发布宠物需求：</span>今日已有<span>301</span>个用户申请</li>
+			<li>
+			  <span>宠物意向：</span>
+				<select name="pet_choose" id="">
+				  <option value="0" selected>请选择</option>
+				  <option value="1">宠物猫</option>
+					<option value="2">宠物狗</option>
+					<option value="3">小宠</option>
+					<option value="4">宠物用品</option>
+			  </select>
+			</li>
+			<li>
+				<span>宠物品种：</span>
+				<select name="pet_type" id="">
+				  <option value="0" selected>请选择</option>
+				</select>
+			</li>
+			<li><input type="text" placeholder="您的手机"></li>
+			<li>
+				<input type="text" placeholder="您的称呼"></li>
+			<li>
+				 <select name="Province" id="">
+				  <option value="0" selected>-请选择-</option>
+				  <option value="1">北京市</option>
+					<option value="2">天津市</option>
+					<option value="3">上海市</option>
+					<option value="4">重庆市</option>
+					<option value="">河北省</option>
+					<option value="">山西省</option>
+					<option value="">辽宁省</option>
+					<option value="">吉林省</option>
+					<option value="">黑龙江省</option>
+					<option value="">江苏省</option>
+					<option value="">浙江省</option>
+					<option value="">安徽省</option>
+					<option value="">福建省</option>
+					<option value="">江西省</option>
+					<option value="">河南省</option>
+					<option value="">湖北省</option>
+					<option value="">湖南省</option>
+					<option value="">广东省</option>
+					<option value="">海南省</option>
+					<option value="">四川省</option>
+					<option value="">贵州省</option>
+					<option value="">云南省</option>
+					<option value="">陕西省</option>
+					<option value="">甘肃省</option>
+					<option value="">青海省</option>
+					<option value="">台湾省</option>
+					<option value="">其他</option>
+				</select>
+				<select name="cities" id="">
+				  <option value="0" selected>-请选择-</option>
+				</select>
+			</li>
+			<li><button>立即提交</button></li>
+			<li>委托奇宠网购买宠物：已有<span>51241</span>人购买到健康的宠物</li>
+		</ul>
+   </div>
+	 <div class="main0_right">
+		  <img src="./img/index/assure.jpg">
+			<div>
+			  <p><a href="#">新闻公告</a></p>
+			  <ul>
+				  <li>促销活动</li>
+				  <li><a href="#">宠物之家开业促销活动</a></li>
+				  <li><a href="#">宠物之家精品促销活动</a></li>
+				  <li><a href="#">宠物之家节日庆典打折促销活动</a></li>
+				  <li><a href="#">宠物之家节日庆典促销活动</a></li>
+        </ul>			
+		    <ul>
+				  <li>最新公告</li>
+				  <li><a href="#">一只犯错后假装一切正常的狗狗</a></li>
+				  <li><a href="#">为什么狗喜欢尿轮胎 遇这四种物品立刻...</a></li>
+				  <li><a href="#">连宠物狗都能感受到委内如拉的贫困窘境...</a></li>
+				  <li><a href="#">来，给你们看一只画风清奇的流浪猫</a></li>
+        </ul>
+			  <ul>
+				  <li>最新新闻</li>
+				  <li><a href="#">狗重达113公斤 脚掌有9.5个马掌大【...</a></li>
+				  <li><a href="#">狗被遗弃狂追公交半小时？主人：它在“追爱...</a></li>
+				  <li><a href="#">英国研究员称宠物狗看电视时最先被声音吸引</a></li>
+				  <li><a href="#">一狗做事一狗当！狗狗绊倒老太 坐等警察来..</a></li>
+        </ul>
+			</div>
+	 </div>
+ </div>
+ <!--热门宠物展示模块-->
+ <div class="hot_pet">
+    <!-- 选项-->
+    <ul class="nav">
+        <li class="nav-item">
+            <a data-toggle="tab" class="active" href="#tab1">热门狗狗</a></li>
+        <li class="nav-item">
+            <a data-toggle="tab"  href="#tab2">热门猫咪</a></li>
+        <li class="nav-item">
+            <a data-toggle="tab"  href="#tab3">热门小宠</a></li>
+    </ul>
+    <!-- 内容-->
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+			     <ul>
+			     	<li>
+						  <a href="#"><img src="./img/index/hot_1.jpg"></a>
+						  <div><p>极易近人忠实</p><a href="#">泰迪犬</a></div></li>
+			     	<li>
+						  <a href="#"><img src="./img/index/hot_2.jpg"></a>
+						  <div><p>文雅忠诚适应性强</p><a href="#">萨摩耶</a></div>
+						</li>
+			     	<li>
+						  <a href="#"><img src="./img/index/hot_3.jpg"></a>
+						  <div><p>开朗活力充沛忠实</p><a href="#">博美犬</a></div>
+						</li>
+			     	<li>
+						  <a href="#"><img src="./img/index/hot_4.jpg"></a>
+							<div><p>温柔警觉喜欢交往</p><a href="#">哈士奇</a></div></li>
+			     </ul>
+			     <ul>
+			     	<li>
+							<a href=""><img src="./img/index/hot_5.jpg"></a>
+							<div><p>热情友善聪明机警</p><a href="#">金毛犬</a></div>
+						</li>
+			     	<li>
+							<a href=""><img src="./img/index/hot_6.jpg"></a>
+							<div><p>文憨厚温和智商极高</p><a href="#">拉布拉多</a></div>
+						</li>
+			     	<li>
+							<a href=""><img src="./img/index/hot_7.jpg"></a>
+							<div><p>温顺敏感顽皮可爱</p><a href="#">比熊犬</a></div>
+						</li>
+			     	<li>
+							<a href=""><img src="./img/index/hot_8.jpg"></a>
+							<div><p>优雅警惕动作迅速</p><a href="#">吉娃娃</a></div>
+						</li>
+			     </ul>
+        </div>
+        <div id="tab2" class="tab-pane">
+					<ul>
+						<li>
+							<a href="#"><img src="./img/index/hot_c_1.jpg"></a>
+							<div><p>性情独立不爱吵闹容易饲养</p><a href="#">加菲猫</a></div>
+						</li>
+						<li>
+							<a href="#"><img src="./img/index/hot_c_2.jpg"></a>
+							<div><p>温柔平静对人友善极易饲养</p><a href="#">英国短毛猫</a></div>
+						</li>
+						<li>
+							<a href="#"><img src="./img/index/hot_c_3.jpg"></a>
+							<div><p>开朗活力充沛忠实</p><a href="#">布偶猫</a></div>
+						</li>	
+						<li>
+							<a href="#"><img src="./img/index/hot_c_4.jpg"></a>
+							<div><p>少动好静爱撒娇举止风度翩翩</p><a href="#">波斯猫</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+						   <a href=""><img src="./img/index/hot_c_5.jpg"></a>
+						  <div><p>活泼好动聪明伶俐气质高雅</p><a href="#">暹罗猫</a></div>
+						</li>
+						<li>
+							<a href=""><img src="./img/index/hot_c_6.jpg"></a>
+							<div><p>叫声很轻乐意与人为伴</p><a href="#">苏格兰折耳猫</a></div>
+						</li>
+						<li>
+							<a href=""><img src="./img/index/hot_c_7.jpg"></a>
+							<div><p>柔情似水善解人意</p><a href="#">金吉拉</a></div>
+						</li>
+						<li>
+							<a href=""><img src="./img/index/hot_c1_8.jpg"></a>
+							<div><p>充满耐性和蔼可亲不会乱发脾气</p><a href="#">英国短毛猫</a></div>
+						</li>
+					</ul>
+        </div>
+        <div id="tab3" class="tab-pane">
+					 <ul>
+			       <li>
+								<a href="#"><img src="./img/index/hot_f_1.jpg"></a>
+							  <div><p>非常温顺活泼喜欢跳来跳去好动</p><a href="#">龙猫</a></div>
+			       </li>
+			       <li>
+							 <a href="#"><img src="./img/index/hot_f_2.jpg"></a>
+							 <div><p>胆小怕惊喜欢安静耐寒怕热</p><a href="#">垂耳兔</a></div>					
+			       </li>
+			       <li>
+							 <a href="#"><img src="./img/index/hot_f_3.jpg"></a>
+							 <div><p>性格很活泼很好奇不扰民</p><a href="#">宠物貂</a></div>
+			       </li>
+			       <li>
+							 <a href="#"><img src="./img/index/hot_f_4.jpg"></a>
+					     <div><p>活泼好动十分温和</p><a href="#">观赏鱼</a></div>
+			       </li>
+           </ul>
+					 <ul>
+					 	<li>
+							<a href=""><img src="./img/index/hot_f_5.jpg"></a>
+							<div><p>善于鸣叫善于飞舞</p><a href="#">宠物鸟</a></div>
+						</li>
+					 	<li>
+							<a href=""><img src="./img/index/hot_f_6.jpg"></a>
+							<div><p>格温顺对食物不挑剔极易饲养</p><a href="#">宠物龟</a></div>
+						</li>
+					 	<li>
+							<a href=""><img src="./img/index/hot_f_7.jpg"></a>
+							<div><p>活泼好动又胆小怕惊吓</p><a href="#">宠物猪</a></div>
+						</li>
+					 	<li>
+							<a href=""><img src="./img/index/hot_f_8.jpg"></a>
+							<div><p>灵活可爱乖巧十分勤劳爱干净</p><a href="#">松鼠</a></div>
+						</li>
+					 </ul>
+        </div>
+    </div>
+ </div>
+ <!--狗狗推荐 -->
+ <div class="pet_recommend"> 
+      <!--标题-->
+	    <div>
+			  <h5>狗狗推荐</h5>
+        <!--链接-->
+				 <a href="#">查看更多<img src="./img/index/more.png"></a>
+			</div>
+      <!--图片轮播图-->
+			<div class="carousel" id="carousel" data-ride="carousel">
+			  <div class="carousel-inner">
+				  <div class="carousel-item active">
+			      <img class="w-100" src="./img/index/carousel_dog_01.jpg">
+					</div>
+					<div class="carousel-item">
+			      <img class="w-100" src="./img/index/carousel_dog_02.jpg">
+					</div>
+					<div class="carousel-item">
+			      <img class="w-100" src="./img/index/carousel_dog_04.jpg">
+					</div>
+				</div>
+		  </div>
+      <!-- 狗狗推荐内容模块-->
+		  <div class="pet_module">
+		   <div>
+           <!-- 宠物图-->
+        <div>
+           <img src="./img/index/01_lb.jpg" data-toggle="./img/index/01_lb.jpg">
+           <div class="pet-show">
+             <img class="p-show" src="./img/index/01_lb2.jpg" data-toggle="./img/index/01_lb2.jpg">
+           </div>
+           <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">拉布拉多健康纯种幼犬 拉布拉多包养活签协议</p>
+             <!-- 价格 -->
+				     <p class="price">￥3399.00</p>
+             <!--商家信息 -->
+             <p>
+               <span>星级宠屋</span>
+               <a href="#">在线咨询</a>
+             </p>
+             <p>
+              <!-- 收藏加入购物车 -->
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+             </p>
+           </div>
+		     </div>
+         <div>
+            <img src="./img/index/jm.jpg" data-toggle="./img/index/jm.jpg">
+            <div class="pet-show">
+              <img class="p-show" src="./img/index/011.jpg" data-toggle="./img/index/011.jpg">
+            </div>
+						<!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">纯种金毛幼犬活体狗狗 温顺型大型犬金毛犬活体狗狗幼犬 巡回猎犬金毛犬双血统金毛犬神犬金毛包纯种 双血统级 公</p>
+             <!-- 价格 -->
+				     <p class="price">￥3999.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div>
+           <img src="./img/index/my.jpg" data-toggle="./img/index/my.jpg">
+          <div class="pet-show">
+            <img class="p-show" src="./img/index/my1.jpg" data-toggle="./img/index/my1.jpg">
+            <img class="p-show" src="./img/index/my2.jpg" data-toggle="./img/index/my2.jpg">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">边牧幼犬活体 纯种边境牧羊犬活体幼犬 缘宠边牧幼犬活体纯种</p>
+             <!-- 价格 -->
+				     <p class="price">￥3299.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div>
+           <img src="./img/index/smy1.jpg" data-toggle="./img/index/smy1.jpg">
+          <div class="pet-show">
+            <img class="p-show" src="./img/index/sm2.jpg" data-toggle="./img/index/sm2.jpg">
+            <img class="p-show" src="./img/index/sm3.jpg" data-toggle="./img/index/sm3.jpg">
+            <img class="p-show" src="./img/index/sm4.jpg" data-toggle="./img/index/sm4.jpg">
+            <img class="p-show" src="./img/index/sm5.jpg" data-toggle="./img/index/sm5.jpg">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">萨摩耶幼犬活体 宠物狗活体狗狗活体狗狗幼犬活体 纯种萨摩耶犬 限时特惠（高品质） 公</p>
+             <!-- 价格 -->
+				     <p class="price">￥2989.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div>
+           <img src="./img/index/hsq1.jpg" data-toggle="./img/index/hsq1.jpg">
+           <div class="pet-show">
+            <img class="p-show" src="./img/index/alsj.jpg" data-toggle="./img/index/alsj.jpg">
+            <img class="p-show" src="./img/index/alsj3.jpg" data-toggle="./img/index/alsj3.jpg">
+            <img class="p-show" src="./img/index/alsj2.jpg" data-toggle="./img/index/alsj2.jpg">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">阿拉斯加犬 阿拉斯加幼犬活体 宠物狗雪橇犬幼崽活体 视频挑选</p>
+             <!-- 价格 -->
+				     <p class="price">￥2899.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+		   </div>
+		   <div>
+         <div><img src="./img/index/02_gd3.jpg" data-toggle="./img/index/02_gd3.jpg">
+          <div class="pet-show">
+            <img class="p-show" src="./img/index/gd1.jpg" data-toggle="./img/index/gd1.jpg">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">西高地白梗犬幼犬活体 纯种血统 视频挑选 全国配送 公母宠物狗活体小狗幼崽 西高地白梗 宠物级</p>
+             <!-- 价格 -->
+				     <p class="price">￥6998.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/hsq3.jpg" data-toggle="./img/index/hsq3.jpg">
+          <div class="pet-show">
+            <img class="p-show" src="./img/index/hsq1.jpg" data-toggle="./img/index/hsq1.jpg">
+            <img class="p-show" src="./img/index/hsq2.jpg" data-toggle="./img/index/hsq2.jpg">
+            <img class="p-show" src="./img/index/hsq.png" data-toggle="./img/index/hsq.png">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">哈士奇幼犬活体纯种血统二哈狗全国配送售后保障公母宠物狗活体小狗幼崽 黑色 宠物级</p>
+             <!-- 价格 -->
+				     <p class="price">￥3999.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/bx3.jpg" data-toggle="./img/index/bx3.jpg">
+          <div class="pet-show">
+            <img class="p-show" src="./img/index/bx.jpg" data-toggle="./img/index/bx.jpg">
+            <img class="p-show" src="./img/index/bx1.jpg" data-toggle="./img/index/bx1.jpg">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">比熊犬活体比熊幼犬宠物狗活体 双血统 母</p>
+             <!-- 价格 -->
+				     <p class="price">￥8000.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/td1.jpg" data-toggle="./img/index/td1.jpg">
+          <div class="pet-show">
+            <img class="p-show" src="./img/index/td.jpg" data-toggle="./img/index/td.jpg">
+            <img class="p-show" src="./img/index/td4.jpg" data-toggle="./img/index/td4.jpg">
+            <img class="p-show" src="./img/index/td3.jpg" data-toggle="./img/index/td3.jpg">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">泰迪幼犬活体 泰迪熊贵宾犬 活体宠物狗 卷毛红色 视频选购 全国运送 幼崽活体狗 血统级丨详情咨询客服</p>
+             <!-- 价格 -->
+				     <p class="price">￥5200.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/zc.jpg" data-toggle="./img/index/zc.jpg">
+          <div class="pet-show">
+            <img class="p-show" src="./img/index/zc1.jpg" data-toggle="./img/index/zc1.jpg">
+            <img class="p-show" src="./img/index/zc2.jpg" data-toggle="./img/index/zc2.jpg">
+            <img class="p-show" src="./img/index/zc3.jpg" data-toggle="./img/index/zc3.jpg">
+          </div>
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#"> 柴犬幼犬纯种活体小幼崽日本中型白宠物狗赤柴豆柴黑犬舍狗狗 精品级 母</p>
+             <!-- 价格 -->
+				     <p class="price">￥4800.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>星级宠屋</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+	  	 </div>
+	    </div>
+ </div>
+ <!--猫猫推荐 -->
+ <div class="pet_recommend"> 
+      <!--标题-->
+	    <div>
+			  <h5>猫猫推荐</h5>
+        <!--链接-->
+				 <a href="#">查看更多<img src="./img/index/more.png"></a>
+			</div>
+      <!--图片轮播图-->
+			<div class="carousel" id="carousel" data-ride="carousel">
+			  <div class="carousel-inner">
+				  <div class="carousel-item active">
+			      <img class="w-100" src="./img/index/carousel_cat_01.jpg">
+					</div>
+					<div class="carousel-item">
+			      <img class="w-100" src="./img/index/carousel_cat_02.jpg">
+					</div>
+					<div class="carousel-item">
+			      <img class="w-100" src="./img/index/carousel_cat_03.jpg">
+					</div>
+				</div>
+		  </div>
+      <!-- 猫猫推荐内容模块-->
+		  <div class="pet_module">
+		   <div>
+         <div>
+           <!-- 宠物图-->
+				   <img src="./img/index/01_cat.jpg">
+           <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">猫咪活体纯种宠物猫美国布偶中长毛中大体型猫海豹双色蓝双重点色蓝眼布偶幼猫视频挑选全国包运</p>
+             <!-- 价格 -->
+				     <p class="price">￥16800.00</p>
+             <!--商家信息 -->
+             <p>
+               <span>宠物之家</span>
+               <a href="#">在线咨询</a>
+             </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+		     </div>
+         <div>
+						<img src="./img/index/02_cat.jpg">
+						<!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">英国短毛猫 可爱银点色英短猫 宠物猫活体 成猫 幼猫 可上门看猫 包售后 全款</p>
+             <!-- 价格 -->
+				     <p class="price">￥8000.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/03_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">布偶猫活体 海双色布偶猫咪 可爱布偶猫宠物猫 仙女猫 可上门看猫 全款</p>
+             <!-- 价格 -->
+				     <p class="price">￥35000.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/04_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">英国短毛猫 蓝金英短 蓝金渐层宠物猫 猫咪活体 上海可上门看猫 定金-</p>
+             <!-- 价格 -->
+				     <p class="price">￥2888.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/05_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">英国短毛猫 蓝金英短 蓝金渐层宠物猫 猫咪活体 上海可上门看猫 定金</p>
+             <!-- 价格 -->
+				     <p class="price">￥1999.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+		   </div>
+		   <div>
+		     <div><img src="./img/index/06_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">金吉拉宠物猫活体 可爱宠物猫活体幼猫 猫活体 长毛宠物猫 包售后 可上门看猫 初价</p>
+             <!-- 价格 -->
+				     <p class="price">￥8500.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/07_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">缅因猫活体 俄罗斯缅因猫 烟灰色大型大骨缅因猫 包售后 可上门看猫 定金</p>
+             <!-- 价格 -->
+				     <p class="price">￥2980.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/08_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">蓝猫英短 英国短毛猫蓝猫 活体 蓝猫幼猫 宠物猫大脸蓝猫幼猫 包售后 全价</p>
+             <!-- 价格 -->
+				     <p class="price">￥4998.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/09_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">纯种宠物猫活体猫咪宠物猫咪泰国暹罗猫海豹重点色挖煤工猫蓝眼睛小体型猫视频挑选</p>
+             <!-- 价格 -->
+				     <p class="price">￥1899.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/10_cat.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">宠物|纯国外引进品种猫|宠物猫咪活体|带证血统猫|繁育级别赛级猫咪|三花色WCF大体型缅因猫</p>
+             <!-- 价格 -->
+				     <p class="price">￥16800.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>宠物之家</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+	  	 </div>
+	    </div>
+ </div>
+
+ <!--小宠物推荐 -->
+ <div class="pet_recommend"> 
+      <!--标题-->
+	    <div>
+			  <h5>小宠推荐</h5>
+        <!--链接-->
+				 <a href="#">查看更多<img src="./img/index/more.png"></a>
+			</div>
+      <!--图片轮播图-->
+			<div class="carousel" id="carousel" data-ride="carousel">
+			  <div class="carousel-inner">
+				  <div class="carousel-item active">
+			      <img class="w-100" src="./img/index/carousel_funny_01.jpg">
+					</div>
+					<div class="carousel-item">
+			      <img class="w-100" src="./img/index/carousel_funny_02.jpg">
+					</div>
+					<div class="carousel-item">
+			      <img class="w-100" src="./img/index/carousel_funny_03.jpg">
+					</div>
+				</div>
+		  </div>
+      <!-- 狗狗推荐内容模块-->
+		  <div class="pet_module">
+		   <div>
+         <div>
+           <!-- 宠物图-->
+				   <img src="./img/index/01_sm.jpg">
+           <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">蜜袋鼯萌宠活体纯白小蜜白化白脸蜜袋鼯口袋宝宝网红异宠睡鼠玩家蜜一公一母小宠活体 一对稀有白蜜袋鼯(一公一母)</p>
+             <!-- 价格 -->
+				     <p class="price">￥6488.00</p>
+             <!--商家信息 -->
+             <p>
+               <span>阿福犬业</span>
+               <a href="#">在线咨询</a>
+             </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+		     </div>
+         <div>
+						<img src="./img/index/02_sm.jpg">
+						<!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">荷兰猪活体一对逆毛宝宝 豚鼠活体 天竺鼠活体 宠物猪猪一公一母小宠活体仓鼠活体宠物活体</p>
+             <!-- 价格 -->
+				     <p class="price">￥38.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/03_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">锦鲤活体观赏鱼淡水鱼冷水鱼锦鲤鱼白金黄金红白三色锦鲤红草鱼 黄金龙凤8-10cm 2条</p>
+             <!-- 价格 -->
+				     <p class="price">￥38.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/04_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">宠物活兔子小宠物小动物小白兔小兔子活体一公一母兔子活体一对灰色垂耳兔侏儒兔幼兔盖脸猫兔</p>
+             <!-- 价格 -->
+				     <p class="price">￥178.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/05_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">地图龟活体龟中哈士奇淡水龟观赏龟宠物小乌龟超活泼 普通地图龟 9至10厘米 1只v</p>
+             <!-- 价格 -->
+				     <p class="price">￥99.80 </p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+		   </div>
+		   <div>
+		     <div><img src="./img/index/06_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">绣眼鸟活体小鸟活体绣眼观赏唱歌鸟相思鸟活体鸟包公活暗绿绣眼鸣鸟宠物鸟精品鸟笼相思鸟活 绣眼公</p>
+             <!-- 价格 -->
+				     <p class="price">￥128.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/07_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">海神大兜虫 L1 L2 L3幼虫 独角仙 长戟大兜虫 小宠乐园 稀有品种 L2幼虫单只</p>
+             <!-- 价格 -->
+				     <p class="price">￥390.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/08_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">小宠活体宠物貂活体安哥鲁雪貂活体丹麦奇特爬行稀有萌宠网红貂 鼬白色</p>
+             <!-- 价格 -->
+				     <p class="price">￥9249.00</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/09_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">新品小火龙鱼活体冷水清道夫鱼工具鱼清洁鱼缸东方娃娃鱼蝾螈金鱼锦鲤 6cm小火龙3只送1只+饲料+鱼药</p>
+             <!-- 价格 -->
+				     <p class="price">￥19.90</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+         <div><img src="./img/index/10_sm.jpg">
+				 <!-- 宠物信息详情 -->
+				   <div  class="pet_module_details">
+             <!--宠物标题 					    -->
+					   <p href="#">蝎子活体宠物 非洲帝王蝎子活体 雨林宠物蝎子活体一对没有毒 活体蝎子食用野生泡酒蝎子药用蝎子油炸蝎子 亚洲雨林蝎怀孕母蝎</p>
+             <!-- 价格 -->
+				     <p class="price">￥98.80</p>
+             <!--商家信息 -->
+						 <p>
+				  	   <span>阿福犬业</span>
+					     <a href="#">在线咨询</a>
+					   </p>
+             <!-- 收藏加入购物车 -->
+					   <p>
+              <a href="#" class="shouc">收藏</a>
+              <a href="#" class="gouwc">加入购物车</a>
+					   </p>
+			  	 </div>
+				 </div>
+	  	 </div>
+	    </div>
+    </div>
+
+	 <!--狗狗百科-->
+	<div class="pet_wiki">
+     <!--标题-->
+	   <div>
+			  <h5>宠物百科</h5>
+        <!--链接-->
+			  <a href="#">查看更多<img src="./img/index/more.png"></a>
+		</div>
+		<div>
+		   <div>
+			  <!--标题-->
+			  <p>狗狗百科</p>
+        <!--内容-->
+			  <ul>
+				  <li><a href="#">怎么看阿拉斯加犬品相 挑选阿拉斯加犬的方法</a></li>
+				  <li><a href="#">给贝灵顿梗起名字不要太复杂</a></li>
+				  <li><a href="#">宠物商城宠物贵不贵</a></li>
+				  <li><a href="#">怎么挑选约克夏犬 选购约克夏的技巧</a></li>
+				  <li><a href="#">中华田园犬品种特征介绍</a></li>
+			  </ul>
+			  <a href="#">查看更多</a>
+		   </div>
+	     <!--猫咪百科-->
+		   <div>
+			  <!--标题-->
+			  <p>猫咪百科</p>
+			  <ul>
+				  <li><a href="#">土耳其安哥拉猫多少钱一只</a></li>
+				  <li><a href="#">加菲猫是什么品种 加菲猫品种资料</a></li>
+				  <li><a href="#">土耳其安哥拉猫多少钱一只</a></li>
+				  <li><a href="#">苏格兰折耳猫的眼睛有多少种颜色</a></li>
+				  <li><a href="#">纯种孟买猫多少钱一只</a></li>
+		  	</ul>
+			  <a href="#">查看更多</a>
+		   </div>
+		   <!--奇宠百科-->
+		   <div>
+			  <!--标题-->
+		  	<p>奇宠百科</p>
+			  <ul>
+				  <li><a href="#">茶杯猪怎么辨别 茶杯猪外形特征介绍</a></li>
+				  <li><a href="#">红魔鬼鱼价格贵不贵 红魔鬼鱼多少钱</a></li>
+				  <li><a href="#">月光鱼多少钱一只 月光鱼市场行情介绍</a></li>
+				  <li><a href="#">市场的魟鱼大概多少钱一只 魟鱼多少钱一对</a></li>
+				  <li><a href="#">三角灯鱼有哪些品种 三角灯鱼品种介绍</a></li>
+			  </ul>
+			  <a href="#">查看更多</a>
+		   </div> 
+		</div>
+ </div>
+ <!--买家评价-->
+ <div class="buyer_evaluation">
+   <!--买家评价标题-->
+	 <div>
+	    <h5>买家评价</h5>
+	 </div>
+   <!--内容区域：左边评价内容，右边热门宠物-->
+	 <div>
+    <!--左边评价内容-->
+		<div class="left_content">
+			<div class="PJ">
+        <div>
+          <div><img src="./img/index/left_1.jpg"></div>
+          <div>
+            <div>
+              <span>担保交易！100个赞！</span>
+              <span>信****0</span>
+            </div>
+            <p>还是担保交易放心！狗狗收到了才给的商家钱！谢谢奇宠网给我带来这么可爱的宝贝！100个赞！！！</p>
+          </div>
+        </div>
+        <div>
+          <div><img src="./img/index/left_2.jpg"></div>
+          <div>
+            <div>
+              <span>实物跟照片相符。</span>
+              <span>m******0</span>
+            </div>
+            <p>非常好，收到狗狗了就是网上看好的狗狗，商家发货还是挺快的，付款之后第二天就收到狗狗了。</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./img/index/left_3.jpg">
+          </div>
+          <div>
+            <div>
+              <span>哇咔咔。我终于有宠物啦</span>
+              <span>宠***儿</span>
+            </div>
+            <p>网上买狗就怕付款之后商家不发货，奇宠网这样的担保交易很好，收到了我满意才给商家的钱。好评！</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./img/index/left_4.jpg">
+          </div>
+          <div>
+            <div>
+              <span>收到狗狗了</span>
+              <span>西**3</span>
+            </div>
+            <p>收到狗狗了，已经带医院去做体检了，健康没问题，医生说换环境让我最好重新打疫苗，今天打了第一针，可怜的狗狗还要挨两针。。。</p>
+          </div>
+        </div>      
+       <div>
+          <div><img src="./img/index/left_1.jpg"></div>
+          <div>
+            <div>
+              <span>担保交易！100个赞！</span>
+              <span>信****0</span>
+            </div>
+            <p>还是担保交易放心！狗狗收到了才给的商家钱！谢谢奇宠网给我带来这么可爱的宝贝！100个赞！！！</p>
+          </div>
+        </div>
+        <div>
+          <div><img src="./img/index/left_2.jpg"></div>
+          <div>
+            <div>
+              <span>实物跟照片相符。</span>
+              <span>m******0</span>
+            </div>
+            <p>非常好，收到狗狗了就是网上看好的狗狗，商家发货还是挺快的，付款之后第二天就收到狗狗了。</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./img/index/left_3.jpg">
+          </div>
+          <div>
+            <div>
+              <span>哇咔咔。我终于有宠物啦</span>
+              <span>宠***儿</span>
+            </div>
+            <p>网上买狗就怕付款之后商家不发货，奇宠网这样的担保交易很好，收到了我满意才给商家的钱。好评！</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./img/index/left_4.jpg">
+          </div>
+          <div>
+            <div>
+              <span>收到狗狗了</span>
+              <span>西**3</span>
+            </div>
+            <p>收到狗狗了，已经带医院去做体检了，健康没问题，医生说换环境让我最好重新打疫苗，今天打了第一针，可怜的狗狗还要挨两针。。。</p>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+			<div class="PJ">
+        <div>
+          <div><img src="./img/index/right_1.jpg"></div>
+          <div>
+            <div>
+              <span>十分很满意</span>
+              <span>蚊****1</span></div>
+            <p>谢谢亲爱的卖家忍痛卖给我这只猫咪，到我家一点都不认生非常乖，跟我家小白能玩一块，非常满意。好评！</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./img/index/right_2.jpg">
+          </div>
+          <div>
+            <div>
+              <span>宝贝很可爱，萌萌哒~</span>
+              <span>桃******0</span>
+            </div>
+            <p>猫猫收到啦，萌萌哒，很乖很粘人，感谢买家的耐心，十分好评！！！</p>
+          </div>
+        </div>
+        <div>
+          <div> <img src="./img/index/right_3.jpg"></div>
+          <div>
+            <div>
+              <span>很开心，终于有宠物啦</span>
+              <span>风******吧</span>
+            </div>
+            <p>非常方便。在网上能直接挑选，然后卖家发货挺快的，收到猫猫的时候兴奋坏啦。感谢卖家的耐心指导(*^__^*) </p></div>
+        </div>
+        <div>
+          <div><img src="./img/index/right_4.jpg"></div>
+          <div>
+            <div>
+              <span>好评</span>
+              <span>小**兔</span>
+            </div>
+            <p>感谢这么有爱心的店家，狗狗上飞机了就千叮万嘱我一定要按时去接机，就怕狗狗在机场待的时间长了，收到狗狗之后活蹦乱跳非常健康，再次感谢店家，给你一个大红花！</p>
+          </div>
+        </div>
+        <div>
+          <div><img src="./img/index/right_1.jpg"></div>
+          <div>
+            <div>
+              <span>十分很满意</span>
+              <span>蚊****1</span></div>
+            <p>谢谢亲爱的卖家忍痛卖给我这只猫咪，到我家一点都不认生非常乖，跟我家小白能玩一块，非常满意。好评！</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./img/index/right_2.jpg">
+          </div>
+          <div>
+            <div>
+              <span>宝贝很可爱，萌萌哒~</span>
+              <span>桃******0</span>
+            </div>
+            <p>猫猫收到啦，萌萌哒，很乖很粘人，感谢买家的耐心，十分好评！！！</p>
+          </div>
+        </div>
+        <div>
+          <div> <img src="./img/index/right_3.jpg"></div>
+          <div>
+            <div>
+              <span>很开心，终于有宠物啦</span>
+              <span>风******吧</span>
+            </div>
+            <p>非常方便。在网上能直接挑选，然后卖家发货挺快的，收到猫猫的时候兴奋坏啦。感谢卖家的耐心指导(*^__^*) </p></div>
+        </div>
+        <div>
+          <div><img src="./img/index/right_4.jpg"></div>
+          <div>
+            <div>
+              <span>好评</span>
+              <span>小**兔</span>
+            </div>
+            <p>感谢这么有爱心的店家，狗狗上飞机了就千叮万嘱我一定要按时去接机，就怕狗狗在机场待的时间长了，收到狗狗之后活蹦乱跳非常健康，再次感谢店家，给你一个大红花！</p>
+          </div>
+        </div>
+      </div>
+		</div>
+		<!--右边热门宠物  -->
+	  <div class="right_content">
+      <div class="right_content_title" id="right_content_title">
+        <h6 onmouseover="pet_change(0) " class="dog1">热门狗狗</h6>
+        <h6 onmouseover="pet_change(1)">热门猫咪</h6>
+        <h6 onmouseover="pet_change(2)">热门小宠</h6>
+      </div>
+      <!--热门宠物-->
+      <div class="right_content_details" id="right_content_details">
+        <!--热门狗狗-->
+        <ul style="display: block">
+          <li>
+            <span>1</span>
+            <b>泰迪犬</b>
+            <i>市价：<em>2000-30000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/010.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">贵宾犬,茶杯犬,小型犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <b>金毛犬</b>
+            <i>市价：<em>2500-50000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/011.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">金毛寻回猎犬,黄金猎犬,黄金拾猎犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <b>博美犬</b>
+            <i>市价：<em>2000-30000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/012.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">波美拉尼亚犬,松鼠犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>4</span>
+            <b>拉布拉多犬</b>
+            <i>市价：<em>2500-50000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/013.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">拉布拉多,导盲犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>5</span>
+            <b>比熊犬</b>
+            <i>市价：<em>2500-30000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/014.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">特内里费狗,巴比熊犬,比雄犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>6</span>
+            <b>哈士奇</b>
+            <i>市价：<em>2000-25000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/015.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">西伯利亚雪橇犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>7</span>
+            <b>柯基犬</b>
+            <i>市价：<em>3000-50000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/016.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">威尔士柯基犬,彭布罗克柯基犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>8</span>
+            <b>法国斗牛犬</b>
+            <i>市价：<em>8000-30000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/017.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">法牛,法斗</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>9</span>
+            <b>博美犬</b>
+            <i>市价：<em>2500-35000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/018.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">萨莫耶德犬,西摩犬</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>10</span>
+            <b>阿拉斯加犬</b>
+            <i>市价：<em>3000-60000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/019.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">阿拉斯加雪橇犬,阿拉斯加马拉缪特</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">大型犬</span>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!--热门猫咪-->
+        <ul style="display: none;">
+          <li>
+            <span>1</span>
+            <b>加菲猫</b>
+            <i>市价：<em>3000-80000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/020.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">虎斑猫,异国短毛猫</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <b>英国短毛猫</b>
+            <i>市价：<em>3000-20000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/021.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">英短</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <b>布偶猫</b>
+            <i>市价：<em>3500-30000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/022.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">布娃娃猫,玩偶猫</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">大型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>4</span>
+            <b>波斯猫</b>
+            <i>市价：<em>2000-15000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/023.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">波丝</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>5</span>
+            <b>暹罗猫</b>
+            <i>市价：<em>3000-80000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/024.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">泰国猫,西母猫</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>6</span>
+            <b>苏格兰折耳猫</b>
+            <i>市价：<em>2500-35000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/025.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">折耳猫,塌耳猫</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>7</span>
+            <b>金吉拉</b>
+            <i>市价：<em>2500-25000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/026.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">无</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中小型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>8</span>
+            <b>美国短毛猫</b>
+            <i>市价：<em>3000-80000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/027.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">美短</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>9</span>
+            <b>孟加拉豹猫</b>
+            <i>市价：<em>3500-50000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/028.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">森林猫,挪威森林</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">大型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>10</span>
+            <b>布偶猫</b>
+            <i>市价：<em>3000-80000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/029.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">布娃娃猫,仙女猫,布拉多尔猫</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">大型猫</span>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!--热门小宠-->
+        <ul style="display:none;">
+          <li>
+            <span>1</span>
+            <b>龙猫</b>
+            <i>市价：<em>2500-20000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/030.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">绒鼠,毛丝鼠,栗鼠,南美洲栗鼠</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型鼠</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <b>垂耳兔</b>
+            <i>市价：<em>100-300</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/031.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">英国迷你垂耳兔,美国迷你垂耳兔,荷兰垂耳兔</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型兔</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <b>仓鼠</b>
+            <i>市价：<em>20-100</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/032.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">腮鼠,搬仓鼠,葵鼠</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型鼠</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>4</span>
+            <b>豚鼠</b>
+            <i>市价：<em>2500-20000</em></i>
+            <div class="pet_details hide ">
+              <div>
+                <a href="#"><img src="./img/index/033.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">荷兰猪,荷兰鼠,彩豚,天竺鼠</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型鼠</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>5</span>
+            <b>松鼠</b>
+            <i>市价：<em>100-2000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/034.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">红腹松鼠,长吻松鼠,岩松鼠</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>6</span>
+            <b>罗汉鱼</b>
+            <i>市价：<em>2500-20000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/035.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">古典罗汉,花罗汉,珍珠罗汉,金花罗汉</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>7</span>
+            <b>鸟</b>
+            <i>市价：<em>60-65000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/036.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">鹦鹉,画眉,八哥,观赏鸟</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>8</span>
+            <b>龟</b>
+            <i>市价：<em>50-50000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/037.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">宠物龟,鳄龟,金钱龟</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">中型</span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>9</span>
+            <b>宠物貂</b>
+            <i>市价：<em>2000-20000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/038.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">雪貂</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02"></span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>10</span>
+            <b>宠物猪</b>
+            <i>市价：<em>300-25000</em></i>
+            <div class="pet_details hide">
+              <div>
+                <a href="#"><img src="./img/index/039.jpg"></a>
+              </div>
+              <div>
+                <p>
+                  <span class="text01">别名：</span>
+                  <span class="text02">迷你猪</span>
+                </p>
+                <p>
+                  <span class="text01">体型：</span>
+                  <span class="text02">小型猪</span>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+		</div>
+	 </div>
+ </div>
+<!--友情链接-->
+  <div class="friendship_link">
+		 <div>友情链接</div>
+		 <div>
+		  <a href="#">0460网站之家</a>
+		  <a href="#">泰迪</a>
+		  <a href="#">博美</a>
+		  <a href="#">金毛</a>
+		  <a href="#">比熊</a>
+		  <a href="#">拉布拉多</a>
+		  <a href="#">萨摩耶</a>
+		  <a href="#">哈士奇</a>
+		  <a href="#">吉娃娃</a>
+		  <a href="#">阿拉斯加</a>
+		  <a href="#">法国斗牛犬</a>
+		  <a href="#">边境牧羊犬</a>
+		  <a href="#">雪纳瑞</a>
+		  <a href="#">松狮</a>
+		  <a href="#">约克夏</a>
+		  <a href="#">秋田犬</a>
+		  <a href="#">德国牧羊犬</a>
+		  <a href="#">柯基犬</a>
+		  <a href="#">英国斗牛犬</a>
+		  <a href="#">金毛</a>
+		  <a href="#">论坛天天宠物网</a>
+		  <a href="#">520名犬商城</a>
+		  <a href="#">绊运猫</a>
+		  <a href="#">宠物猫</a>
+		  <a href="#">宠物知识</a>
+		  <a href="#">宠物狗零食</a>
+		  <a href="#">宠物狗</a>
+		  <a href="#">宠物秀场</a>
+			<a href="#">中国狸花猫</a>
+			<a href="#">褴褛猫</a>
+			<a href="#">狗狗系</a>
+			<a href="#">加纳利犬</a>
+			<a href="#">小型犬</a>
+			<a href="#">蝴蝶犬</a>
+			<a href="#">博美犬</a>
+			<a href="#">宠物用品网</a>
+			<a href="#">中型犬</a>
+			<a href="#">迷你腊肠犬</a>
+			<a href="#">中国冠毛犬</a>
+			<a href="#">宠物商城</a>
+			<a href="#">英短</a>
+			<a href="#">喜马拉雅猫</a>
+			<a href="#">邻家的宠物</a>
+			<a href="#">宠物生活</a>
+			<a href="#">巴吉度犬</a>
+		 </div>
+	 </div>
+</div>
+<!--引入脚部footer  -->
+<footer>
+	<iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>

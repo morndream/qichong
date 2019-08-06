@@ -1,4 +1,4 @@
-<!-- 注册验证 -->
+
  //用户名获取焦点时事件
 function show_namemsg(){
    	  uname_msg.innerHTML="中文、英文、数字包括下划线"; 
@@ -7,7 +7,7 @@ function show_namemsg(){
 //正则表达式判断是否符合规则
 function uname_notnull(){
     //正则表达式用户名：数字、字母、下划线
-		var reg=/^[".chr(0xa1)."-".chr(0xff)."A-Za-z0-9_]+$/;
+		var reg=/^[a-zA-Z0-9_\u4e00-\u9fa5]+$/;
 	    if(!uname.value){
 				  uname_msg.innerHTML="用户名不能为空";
 					uname_msg.style.color="red";
@@ -27,8 +27,9 @@ function uname_notnull(){
 							 	var result=xhr.responseText;
 						   if(result==1){
 						      uname_msg.innerHTML="用户名已被使用"
-							  uname_msg.style.color="red";
-							  alert("该用户名已被使用")
+							     uname_msg.style.color="red";
+									 alert("该用户名已被使用");
+
 						    }else{
 						      uname_msg.innerHTML="输入格式正确"
 									 uname_msg.style.color="blue";
@@ -113,7 +114,10 @@ var btn=document.getElementById("button");
   var u_name=uname.value;
   var u_pwd=upwd.value;
   var e_mail=email.value;
-  var c_pwd=cpwd.value;
+	var c_pwd=cpwd.value;
+	if(uname_msg.innerHTML=="用户名已被使用"){
+		alert("用户名已被使用");
+	}else{
   //创建异步对象
 		var xhr=new XMLHttpRequest();
     //监听并接收响应
@@ -123,7 +127,7 @@ var btn=document.getElementById("button");
 			  var result=xhr.responseText;
 	          alert(result);
 			  if(result=="注册成功"){
-			    window.location.href="http://127.0.0.1:8080/login.html";		  
+			    window.location.href="http://127.0.0.1:8080/qc_login.html";		  
 			  }
 			}	
 		}
@@ -136,3 +140,4 @@ var btn=document.getElementById("button");
 		//发送请求
 		 xhr.send(formdata);	  
  }
+}

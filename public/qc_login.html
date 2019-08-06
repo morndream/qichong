@@ -1,0 +1,111 @@
+<!doctype html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<link rel="stylesheet" href="css/comm.css">
+	<link rel="stylesheet" href="css/login.css">
+ </head>
+ <body>
+  <!--用户注册页眉header-->
+  <div id="header">
+		<a href="#"><img src="./img/login_logo.png"></a>
+		<p>用户登录</p>
+	</div>
+  <div id="container">
+    <!--左边图片 -->
+		<div class="qc_option_left">
+			<ul>
+				<li>
+					<a href="#"><img src="./img/login/login_dog.jpg"></a>
+					<div>
+						<a href="#">热门狗狗</a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="./img/login/login_cat.jpg"></a>
+					<div>
+						<a href="#">热门猫咪</a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="./img/login/login_funny.jpg"></a>
+				  <div>
+						<a href="#">热门小宠</a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="./img/login/login_yong.jpg"></a>
+					<div>
+						<a href="#">宠物用品</a>
+					</div>
+				</li>			
+			</ul>
+		</div>
+    <!--右边登录框-->
+	  <div class="user_login_right">
+			<h1>登录奇宠网</h1>
+			<div class="login_type">
+				<a class="my_style">手机快捷登录</a>
+				<a>账号登录</a>
+			</div>
+			<div class="login_info">
+				<ul>
+					<li>
+						账号: <span id="uname_msg"></span>	
+					</li>
+					<li>
+						<input type="text" id="uname" placeholder="请输入账号" onblur="uname_notnull()">
+					</li>
+					<li>
+						密码: <span id="upwd_msg"></span>
+					</li>
+					<li>
+						<input type="password" id="upwd" placeholder="请输入密码" onblur="upwd_notnull()">
+					</li>
+					<li>
+						<input type="checkbox" id="ck_box">
+						<label for="ck_box">记住登录</label>
+						<a href="#">忘记密码</a>
+					</li>
+					<li>
+					 <input type="button" value="登录" id="button">				
+					</li>
+					<div class="turn_reg">
+						<a href="qc_reg.html">没有账号,立即注册</a>
+					</div>
+					<div class="other_login_type">
+						<img src="./img/login/login_qq.png">
+						<img src="./img/login/login_weixin.png">
+						<img src="./img/login/login_sina.png">
+					</div>
+				</ul>
+			</div>
+      <div class="login_info2">
+				<ul>
+					<li>
+						手 机 号: <span id="phone_msg"></span>	
+					</li>
+					<li>
+						<input type="text" id="phone2" placeholder="请输入手机号" onblur="phone_notnull()">
+					</li>
+					<li>
+						密&nbsp;&nbsp;&nbsp;&nbsp;码: <span id="upwd2_msg"></span>
+					</li>
+					<li>
+						<input type="password" id="upwd2" placeholder="请输入密码"  onblur="upwd2_notnull()">
+					</li>
+					<li>
+					 <input type="button" value="登录" id="button2">
+					</li>
+					<div class="other_login_type">
+						<img title="QQ" src="./img/login/login_qq.png">
+						<img title="微信" src="./img/login/login_weixin.png">
+						<img title="新浪" src="./img/login/login_sina.png">
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/login.js"></script>
+</body>
+</html>
